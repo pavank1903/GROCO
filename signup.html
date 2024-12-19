@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {box-sizing: border-box}
+input[type=text], input[type=password] {
+   width: 50%;
+   font-size: 12px;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+}
+label{
+   font-size: 16px;
+}
+input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+}
+hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+}
+.but1{
+   position: relative;
+   border: none;
+   transition: .4s ease-in;
+   z-index: 1;
+}
+
+button {
+   font-size: 12px;
+   font-weight: bold;
+   background-color: rgb(162, 214, 20);
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 10%;
+   opacity: 0.8;
+   
+}
+button:hover {
+   opacity:1;
+   color: azure;
+}
+.cancel {
+   border-radius: 15px;
+   padding: 14px 12px;
+   background-color: #cf0eb5;
+}
+
+.signup{
+    padding: 14px 12px;
+   background-color: #0ea8cf;
+   border-radius: 15px;
+}
+.formContainer {
+   padding: 16px;
+}
+.formContainer p{
+   font-size: 12px;
+}
+.but:hover{
+   border: 0.5px solid #ff96ad;
+   background-color: #db6313;
+   opacity: 1;
+}
+.but a{
+   text-decoration:none;
+   color:rgb(37, 24, 7);
+   
+}
+</style>
+<body><div>
+<button  class="but"> <a href="index.html">HOME</a> </button>
+</div>
+<form>
+<div class="formContainer">
+<h1>Sign Up Form</h1>
+<hr>
+
+<label for="email"><b>Email</b></label><br>
+<input type="text" placeholder="Enter Email" name="email" required><br>
+<label for="password"><b>Password</b></label><br>
+<input type="password" placeholder="Enter Password" name="password" required><br>
+<label for="repeatPassword"><b>Repeat Password</b></label><br>
+<input type="password" placeholder="Repeat Password" name="repeatPassword"
+required><br>
+<label>
+<input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px;"> Remember me
+</label>
+<p>By creating an account you agree to our <a href="#"
+style="color:dodgerblue">Terms & Privacy</a><p>
+<div>
+   <center>
+<button type="submit" class="signup">Sign Up</button>
+<button type="button" class="cancel">Cancel</button>
+
+</center>
+</div>
+</div>
+</form>
+</body>
+</html>
